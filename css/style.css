@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.left-login > h1{
+    color: azure;
+    font-size: 3vw;
+}
+
+.left-login-image{
+    width: 40vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-login{
+    width: 60%;
+    padding: 30px 35px;
+    box-shadow: 0px 10px 40px #241717a8 ;
+    
+    
+}
+
+.card-color{
+    background-color: #363636;
+    
+}
+
+.title-card{
+    color: azure;
+    font-weight: 700;
+    margin: 0;
+    
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 80vw;
+    }
+}
